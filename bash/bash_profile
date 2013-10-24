@@ -29,3 +29,39 @@ bash_completion_path="$(brew --prefix)/etc/bash_completion"
 if [[ -r $bash_completion_path ]]; then
     source $bash_completion_path
 fi
+
+# {{{
+# Node Completion - Auto-generated, do not touch.
+shopt -s progcomp
+for f in $(command ls ~/.node-completion); do
+  f="$HOME/.node-completion/$f"
+  test -f "$f" && . "$f"
+done
+# }}}
+
+##
+# Your previous /Users/krisborchers/.bash_profile file was backed up as /Users/krisborchers/.bash_profile.macports-saved_2013-02-20_at_10:57:03
+##
+
+# set JAVA_HOME
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_21.jdk/Contents/Home
+
+# set FORGE_HOME
+export FORGE_HOME=/Users/krisborchers/forge-distribution-1.2.2.Final
+
+# set ANDROID_HOME
+export ANDROID_HOME=/Users/krisborchers/android-sdk-macosx/tools
+
+# set JBOSS_HOME
+export JBOSS_HOME=/Users/krisborchers/jboss-as-7.1.1.Final
+
+# set VERTX_HOME
+export VERTX_HOME=/Users/krisborchers/git-repo/vert.x/build/vert.x-2.0.0-beta4-SNAPSHOT
+
+# set MYSQL_HOME
+export MYSQL_HOME=/Applications/MAMP/Library/
+
+# MacPorts Installer addition on 2013-02-20_at_10:57:03: adding an appropriate PATH variable for use with MacPorts.
+export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/sbin:/Users/krisborchers/git-repo/jsdoc:$VERTX_HOME/bin:$JAVA_HOME:$FORGE_HOME/bin:$ANDROID_HOME:$JBOSS_HOME/bin:$MYSQL_HOME/bin:$PATH
+# Finished adapting your PATH environment variable for use with MacPorts.
+
